@@ -30,6 +30,7 @@ nav {
     padding: 10px;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid var(--border-color);
     background-color: var(--secondary-color);
 }
 
