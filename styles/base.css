@@ -19,11 +19,6 @@ body {
     gap: 2px;
 }
 
-body > * {
-
-   
-}
-
 header {
     grid-column: 1/ 5;
     text-align: center;
