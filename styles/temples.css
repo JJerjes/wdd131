@@ -1,31 +1,50 @@
-@media (max-width:800px) {
+:root {
+    --primary-color: #780000;
+    --second-color: #c1121f;
+    --third-color: #fdf0d5;
+    --fourth-color: #003049;
+    --fifth-color: #669bbc;
+}
+
+@media (max-width:780px) {
+
+    body {
+        background-size: cover;
+    }
+
     nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 88px;
-        text-align: center;
-        background-color: rgba(173, 90, 90, 0.571);
-        width: 100%;
+        top: 76px;
+        background-color: var(--fifth-color);
+        align-content: center;
+        display: none;
+        width: 100%; 
     }
 
     nav.active {
         display: flex;
     }
 
-    #menu {
-        display: none;
+     #menu {
+        display: block;
     }
-
+     
     nav {
         flex-direction: column;
     }
-
-    @media (max-width:480px) {
-        section {
-            grid-template-columns: 1fr;
-        }
-    }
-    
 }
 
+@media all and (max-width:576px) {
+    body {
+        grid-template-rows: 80px 3150px 90px;
+    }
+    figure {
+        grid-column: 1/5;
+    }
+
+    section {
+        grid-row: repeat(9,100px);
+    }
+}

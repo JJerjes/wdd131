@@ -18,4 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const formattedDate = lastModifiedDate.toLocaleString('en-US', options);
 
     document.getElementById("lastModified").textContent = `Last Modification: ${formattedDate}`;
+    
+    const menuButton = document.querySelector('#menu');
+    const nav = document.querySelector('nav');
+    const main = document.querySelector('main')
+
+    menuButton.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        menuButton.classList.toggle('open');
+
+        if(nav.classList.contains('active')) {
+            main.style.marginTop = '300px';
+        }else {
+            main.style.marginTop = '0';
+        }
+    });
 });
+
+

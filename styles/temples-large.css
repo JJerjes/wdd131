@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     grid-column: 1/5;
+    padding: 0 20px;
     flex-direction: row;
 }
 
@@ -45,10 +46,17 @@ h1 {
 nav {
     display: flex;
     gap: 10px;
-    /* flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    margin: 5px; */
+    margin: 5px;
      
+}
+
+nav {
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 
 #menu {
@@ -56,9 +64,10 @@ nav {
 	border: 0;
 	background: none;
 	color: #000;
-	position: absolute;
+	position: relative;
 	top: 1rem;
 	right: 1rem;
+    display: none;
 }
 
 #menu::before {
@@ -69,25 +78,19 @@ nav {
     content: '✖️';
 }
 
-
-
-.open a {
-    display: block;
-}
-
 a {
-    margin: 10px;
-    width: 90px;
+    margin: 5px;
     padding: 10px;
     color: var(--third-color);
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-
+    transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: var(--fifth-color);
+    border-radius: 20px;
+    background-color: var(--fourth-color);
 }
 
 #menu {
@@ -100,7 +103,12 @@ nav a:hover {
 
 main {
     grid-column: 1/5;
+    padding: 20px;
     border: 1px solid  var(--fourth-color);
+}
+
+nav.active ~ main {
+    margin-top: 300px; /* Ajusta este valor según la altura del menú */
 }
 
 .header {
@@ -124,13 +132,12 @@ section {
 figure {
     display: grid;
     justify-content: space-around;
+    margin: 0;
 }
 
 .img {
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    box-shadow: 0 0 5px;
+    object-fit: cover;
+    box-shadow: 0 0 3px;
 }
 
 figcaption {
@@ -141,6 +148,7 @@ figcaption {
 
 footer {
     grid-column: 1/5;
+    padding: 20px;
     background-color: var(--fourth-color);
 }
 
