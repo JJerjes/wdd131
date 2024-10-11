@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/plaece.css">
+    <script src="./scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CUZCO</h1>
+    </header>
+    <main>
+        <picture class="">
+            <source media="(min-width:1000px)" srcset="./week03/images/places/place-III.webp">
+            <source media="(min-width:500px)" srcset="./week03/images/places/place-II.avif">
+            <img src="./week03/images/places/place-I.webp" alt="background-photo" width="1500" height="400">
+        </picture>
+        <section class="section-1">
+            <h3>Data</h3>
+            <ul>
+                <li>AREA: 70.015 km<sup>2</sup></li>
+                <li>POPULATION: 1,205,527</li>
+                <li>CAPITAL: La ciudad de cusco</li>
+                <li>LANGUAGES: Castellano</li>
+                <li>CURRENCY: El sol</li>
+                <li>TIME ZONE: (GMT-5)</li>
+                <li>CALLING CODE: +51</li>
+                <li>INTERNET TLD: .mg</li>
+            </ul>
+        </section>
+        <section class="section-2">
+            <h3>Weather 🌥️</h3>
+            <ul>
+                <li>TEMPERATURE: 10°C</li>
+                <li>CONDITIONS: Partly Cloudy</li>
+                <li>WIND: 5 km/h</li>
+                <li>WIND CHILL: <span id="windChill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
