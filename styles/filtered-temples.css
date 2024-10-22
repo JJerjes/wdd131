@@ -1,4 +1,4 @@
-:root {
+    :root {
     --primary-color: #780000;
     --second-color: #c1121f;
     --third-color: #fdf0d5;
@@ -17,6 +17,7 @@
         flex-direction: column;
         position: absolute;
         top: 76px;
+        left: 0;
         background-color: var(--fifth-color);
         align-content: center;
         display: none;
@@ -31,10 +32,6 @@
         display: block;
     }
      
-    nav {
-        flex-direction: column;
-    }
-
     nav a {
         color: var(--third-color);
         transition: 0.1s;
@@ -47,15 +44,22 @@
     }
 }
 
-@media all and (max-width:576px) {
+
+@media (max-width: 900px) {
     body {
-        grid-template-rows: 80px 3150px 90px;
+        grid-template-rows: 80px 2500px 90px;
     }
-    figure {
-        grid-column: 1/5;
+    #card {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-rows: 80px 4900px 90px;
     }
 
-    section {
-        grid-row: repeat(9,100px);
+    #card {
+        grid-template-columns: 1fr; 
     }
 }
