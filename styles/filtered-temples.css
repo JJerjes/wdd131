@@ -47,7 +47,7 @@
 
 @media (max-width: 900px) {
     body {
-        grid-template-rows: 80px 2500px 90px;
+        grid-template-rows: 80px 3100px 90px;
     }
     #card {
         grid-template-columns: repeat(2, 1fr); 
@@ -56,7 +56,7 @@
 
 @media (max-width: 600px) {
     body {
-        grid-template-rows: 80px 4900px 90px;
+        grid-template-rows: 80px 5400px 90px;
     }
 
     #card {
