@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="review form">
+    <meta name="author" content="Jerjes Mariluz Caciano">
+    <link rel="stylesheet" href="./styles/form.css">
+    <script src="./scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+
+    <main>
+        
+        <form  id="reviewForm"  action="review.html" method="get" class="pn1" >
+            
+            <label for="nameSelect" class="title">Product Name</label>
+            <select name="namep" id="nameSelect" required>
+                <option value="" disabled selected>Please Select</option>
+            </select>
+            <div id="overall">
+                <label class="title">Overall Rating</label>
+                
+                <label>
+                    <input type="radio" name="overvall" value="1" required>☆
+                </label>
+
+                <label>
+                    <input type="radio" name="overvall" value="2" required>☆☆
+                </label>
+
+                <label>
+                    <input type="radio" name="overvall" value="3" required>☆☆☆  
+                </label>
+
+                <label>
+                    <input type="radio" name="overvall" value="4" required>☆☆☆☆ 
+                </label>
+
+                <label>
+                    <input type="radio" name="overvall" value="5" required>☆☆☆☆☆
+                </label>
+            </div>
+
+            <label for="data" class="title">Date of Installation
+                <input type="date" name="data" id="data" required>
+            </label>
+
+            <label class="title">Useful Features</label>
+            <label>
+                <input type="checkbox" id="feature1" name="Features" value="Feature 1">
+                Feature 1
+            </label>
+
+            <label>
+                <input
+                type="checkbox" id="feature2" name="Features" value="Feature 2">
+                Feature 2
+            </label>
+
+            <label>
+                <input
+                type="checkbox" id="feature3" name="Features" value="Feature 3">
+                Feature 3
+            </label>
+
+            <label>
+                <input
+                type="checkbox" id="feature4" name="Features" value="Feature 4">
+                Feature 4
+            </label>
+            
+            <label>
+                <input
+                type="checkbox" id="feature5" name="Features" value="Feature 5">
+                Feature 5
+            </label>
+
+            <label for="review" class="title">Written Review<small>(optional)</small></label>
+            <textarea name="review" id="review" rows="4" cols="50"></textarea>
+
+            <label for="fname" class="title">Your Name<small>(optional)</small></label>
+            <input type="text" id="fname" name="fname">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+      <p><span id="currentyear"></span></p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
+
