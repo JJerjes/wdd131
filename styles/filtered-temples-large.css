@@ -49,9 +49,7 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 5px;
-    
-     
+    margin: 5px;   
 }
 
 nav {
@@ -184,4 +182,10 @@ p {
     color: var(--third-color);
 }
 
+footer, 
+div {
+    display: grid;
+    justify-content: end;
+    
+}
 

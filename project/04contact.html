@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sanger One</title>
+    <meta name="description" content="siteplan project">
+    <meta name="author" content="Jerjes Mariluz">
+    <link rel="stylesheet" href="./styles/siteplan.css">
+    <link rel="stylesheet" href="./styles/siteplan-media.css">
+    <script src="./scripts/siteplan.js" defer></script>
+</head>
+<body>
+    <header class="header-1">
+        <h1>Sanger One</h1>
+        <button id="menu" type="button"></button>
+        <nav>
+            <a href="01siteplan.html" title="HOME">Home</a>
+            <a href="02services.html" title="SERVICES">Services</a>
+            <a href="03album.html" title="ALBUM OF WORKS">Album of Works</a>
+            <a href="04contact.html" title="CONTACT US">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="contact">Contact Us</h2>
+        
+        <form class="wf1" method="get" action="thanks.html">
+            <label class="label">Applicant Information</label>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Phone Number<input type="tel" name="phone" placeholder="123456789"></label>
+            <label>E-mail*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <div>
+                <label>Message</label>
+                <label for="message">Your Message<textarea name="message" id="message" rows="5"></textarea></label>
+            </div>
+            <input type="submit" value="Request information">
+        </form>
+    </main>
+    <footer>
+        <p class="p"> <a href="mailto:caquice@sangerone.com" title="e-mail">caquice@sangerone.com</a><br>
+            &copy; 2024 Sanger One. All rights reserved</p>
+        <div>
+            <a href="https://www.facebook.com/"><img src="./images/socialnetworks/facebook1.webp" alt="facebook" width="30"></a>
+            <a href="https://www.instagram.com/"><img src="./images/socialnetworks/instagram.webp" alt="Instagram" width="30"></a>
+            <a href="https://web.whatsapp.com/"><img src="./images/socialnetworks/whatsapp.webp" alt="Whats App" width="30"></a>
+        </div>
+    </footer>
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/tu_numero_de_telefono" target="_blank">
+            <img src="./images/socialnetworks/whatsapp.webp" alt="WhatsApp" width="50">
+        </a>
+    </div>
+</body>
+</html>

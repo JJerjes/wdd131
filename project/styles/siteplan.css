@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #d7263d;    
+    --second-color: #f46036;     
+    --third-color: #2e294e;     
+    --fourth-color: #1b998b;     
+    --fifth-color: #c5d86d;  
+    --sixth-color: #1ef71edd;   
+    --seventh-color: #fdf0d5;
+    --eigth-color: #003049;
+    --nineth-color: #669bbc; 
+    --tenth-color: #ffffff;
+}
+
+/*CSS SITEPLAN*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 100px;
+    border: 1px solid lightgray;
+    font-family: 'Montserrat', sans-serif
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--eigth-color);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-direction: row;
+}
+
+.Wireframe {
+    text-decoration: none;
+    text-align: center;
+    color: var(--seventh-color);
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: var(--fourth-color);
+}
+
+.Wireframe:hover {
+    color: var(--eigth-color);
+}
+
+.header-1, h1 {
+    background-color: var(--fourth-color);
+}
+
+h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 5px;
+    color: var(--seventh-color);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--third-color);
+    display: none; 
+}
+
+nav a {
+    margin: 5px;
+    padding: 10px;
+    color: var(--seventh-color);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.1s;
+}
+
+nav a:hover {
+    color: var(--eigth-color);
+    background-color: var(--seventh-color);
+}
+
+#menu::before {
+    content: "☰"; 
+}
+
+#menu.open::before {
+    content: '❌'; 
+}
+
+main {
+   width: 100%;
+   padding: 10px;
+   
+}
+
+h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--third-color);
+}
+
+section {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--nineth-color);
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.service .service-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--fourth-color);
+    color: var(--seventh-color);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.1s;
+}
+
+.service .service-button:hover {
+    background-color: var(--fourth-color);
+}
+
+.service, .service-button {
+    border: none;
+}
+
+.service-button {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+blockquote {
+    margin: 10px;
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    font-style: italic;
+}
+
+.section {
+    text-align: center;
+}
+
+.contact-button {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--fourth-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s; 
+    color: var(--seventh-color);
+}
+
+
+.contact-button:hover {
+    color: var(--seventh-color);
+    background-color: var(--second-color);
+}
+
+
+.contact-button.active {
+    transform: scale(1.1);
+}
+
+p {
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: var(--fourth-color);
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.email a {
+    color: var(--seventh-color);
+    text-decoration: none;
+}
+
+footer,
+p {
+    color: var(--eigth-color);
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+} 
+
+.p {
+    color: var(--seventh-color);
+}
+
+div,
+a {
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+div a:hover {
+    transform: scale(1.3);
+}
+
+/*CSS SERVICES*/
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 2px 5px var(--third-color);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CSS ALBUM OF WORKS */
+
+nav a {
+    margin: 5px;
+    padding: 10px;
+    color: var(--seventh-color);
+    font-weight: 700;
+    text-align: center;
+    
+} 
+
+#menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--third-color);
+    font-size: 24px;
+}
+
+main {
+    grid-column: 1/5;
+    padding: 20px;
+    border: 1px solid  var(--fifth-color);
+}
+
+nav.active ~ main {
+    margin-top: 300px;
+}
+
+.header {
+    display: grid;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+#card {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-album {
+    border: 1px solid var(--fourth-color);
+    padding: 6px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.1);
+}
+
+.card-album figure {
+    margin: 0;
+}
+
+.card-album img {
+    max-width: 100%; 
+    height: auto;    
+    border-radius: 8px; 
+}
+
+.card-album figcaption {
+    font-size: smaller;
+    font-weight: 900;
+    text-align: center;
+    color: var(--fourth-color);
+}
+
+
+/*CSS CONTACT US*/
+.contact {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--eigth-color)
+}
+
+.wf1 .label {
+    padding: 0.5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--eigth-color);
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: var(--nineth-color);
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 textarea,
+.wf1 input[type="number"] {
+    background-color: var(--tenth-color);
+    display: block;
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--eigth-color);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    color: var(--seventh-color);
+    font-weight: bold;
+    background-color: var(--second-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0.4rem;
+    transition: background-color 0.2s;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-color: var(--nineth-color);
+}
+
+.wf1 input:required {
+    border-right: 8px solid var(--second-color);
+}
+
+.wf1 input:required:valid {
+    border-right: 8px solid var(--sixth-color);
+} 
+
+/* CSS of THANKS */
+
+body.body-thanks {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.header-thanks {
+    background-color: var(--fourth-color); 
+    padding: 20px;
+    text-align: center;
+}
+
+.main-thanks {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.footer-thanks {
+    background-color: var(--fourth-color); 
+    padding: 10px;
+    text-align: center;
+}
+
+h2.h2 {
+    font-size: 2rem; 
+}
+
+p {
+    font-size: 1rem;
+}
+
+.p a {
+    text-decoration: none;
+    color: var(--third-color);
+    font-weight: bold;
+}
+
+.p a:hover {
+    color: var(--seventh-color);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    top: 100px; 
+    right: 5px; 
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 70px; 
+    transition: transform 0.3s ease; 
+}
+
+.whatsapp-icon:hover img {
+    transform: scale(1.1); 
+}
