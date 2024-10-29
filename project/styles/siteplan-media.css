@@ -49,10 +49,12 @@
         top: 80px; 
         left: 0;
         z-index: 1000;
+        border: none; /* Eliminar borde */
+        box-shadow: none; /* Eliminar sombra */
     }
-
+    
     nav.open {
-        display: flex; 
+        display: flex; /* Mostrar cuando el menú está abierto */
     }
 
     .service-container {
@@ -102,6 +104,7 @@
 }
 
 @media (max-width: 768px) {
+    
     #card {
         grid-template-columns: 1fr; 
     }
