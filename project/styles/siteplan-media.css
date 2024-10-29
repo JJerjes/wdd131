@@ -54,7 +54,7 @@
     }
     
     nav.open {
-        display: flex; /* Mostrar cuando el menú está abierto */
+        display: flex; 
     }
 
     .service-container {
