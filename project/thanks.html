@@ -8,12 +8,13 @@
     <meta name="author" content="Jerjes Mariluz">
     <link rel="stylesheet" href="./styles/siteplan.css">
     <link rel="stylesheet" href="./styles/siteplan-media.css">
+    <script src="./scripts/thanks.js" defer></script>
     <script src="./scripts/siteplan.js" defer></script>
 </head>
 <body class="body-thanks">
     <header class="header-thanks">
         <h1>Sanger One</h1>
-        <button id="menu" type="button"></button>
+        <button id="menu" type="button" aria-label="toogle menu"></button>
         <nav class="nav-thanks">
             <a href="01siteplan.html" title="HOME">Home</a>
             <a href="02services.html" title="SERVICES">Services</a>
@@ -26,7 +27,10 @@
         <h2 class="h2">Thank you for requesting your information!</h2>
         <p>We have received your form and we want to thank you for taking the time to contact us.
             A member of our team will contact you soon to answer your questions and offer you the best possible assistance.
-            We wish you a great day!</p>
+            We wish you a great day!
+        </p>
+        <div id="thankYouMessage"></div>
+
     </main>
 
     <footer>
