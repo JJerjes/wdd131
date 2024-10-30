@@ -14,6 +14,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     text-align: center;
     width: 100%;
@@ -22,6 +31,14 @@ header {
     background-color: var(--fourth-color);
 }
 
+main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+}
 
 .pn1 {
     margin: 2rem 0;
@@ -120,3 +137,4 @@ footer {
     color: var(--third-color);
     background-color: var(--fourth-color);
 }
+
