@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sanger One</title>
+    <title>Album of Works - Sanger One</title>
     <meta name="description" content="siteplan project">
     <meta name="author" content="Jerjes Mariluz">
     <link rel="stylesheet" href="./styles/siteplan.css">
@@ -13,31 +13,27 @@
 <body>
     <header class="header-1">
         <h1>Sanger One</h1>
-        <button id="menu" type="button"></button>
+        <button id="menu" type="button" ></button>
         <nav>
-            <a href="01siteplan.html" title="HOME">Home</a>
-            <a href="02services.html" title="SERVICES">Services</a>
-            <a href="03album.html" title="ALBUM OF WORKS">Album of Works</a>
-            <a href="04contact.html" title="CONTACT US">Contact Us</a>
+            <a href="siteplan.html" id="home" title="HOME">Home</a>
+            <a href="#" id="allWorks" title="ALL WORKS">All Works</a>
+            <a href="#" id="painting" title="PAINTING">Painting</a>
+            <a href="#" id="plumbing" title="PLUMBING">Plumbing</a>
+            <a href="#" id="electricity" title="ELECTRICITY">Electricity</a>
+            <a href="contact.html" id="contact" title="CONTACT US">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <h2 class="contact">Contact Us</h2>
-        
-        <form id="contactForm" class="wf1" method="post" action="thanks.html" >
-            <label class="label">Applicant Information</label>
-            <label>First Name*<input type="text" name="fname" required></label>
-            <label>Last Name*<input type="text" name="lname" required></label>
-            <label>Phone Number<input type="tel" name="phone" placeholder="123456789"></label>
-            <label>E-mail*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            <div>
-                <label>Message</label>
-                <label for="message">Your Message<textarea name="message" id="message" rows="5"></textarea></label>
-            </div>
-            <input type="submit" value="Request information">
-        </form>
+        <header class="header">
+            <h2>General Painting Gallery</h2>
+            <p>We have a painting, plumbing and electrical service, specialized in exteriors and interiors.
+                Our goal is professional finishes. For us, our main objective is to satisfy the customer, we strive every day to offer greater services and better quality.</p>
+        </header>
+
+        <div id="card"></div>
     </main>
+
     <footer>
         <div class="footer-content">
             <div class="footer-left">
